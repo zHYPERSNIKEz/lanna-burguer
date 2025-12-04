@@ -18,20 +18,6 @@ export const produtos = {
         opcoes: ['Carne de Sol c/ Queijo coalho', 'Carne de Sol c/ Catupiry e Queijo'],
         instructionText: 'Escolha os sabores e quantidades:'
     },
-    'pastel-2-sabores': {
-        titulo: 'Pastel 2 Sabores',
-        opcoes: ['Frango com Bacon','Frango com Catupiry',
-                'Frango com Calabresa','Frango com Queijo',
-                'Carne com Queijo',
-                'Carne com Catupiry',
-                'Carne com Bacon'],
-        instructionText: 'Escolha os sabores e quantidades:'
-    },
-    'pastel-x-tudo': {
-        titulo: 'Pastel X-Tudo',
-        opcoes: ['Carne', 'Queijo', 'Frango', 'Queijo e Bacon', 'Calabresa e Queijo', 'Pizza', 'Frango com Cheddar e azeitona', 'Frango com Queijo e azeitona', 'Carne de Sol c/ Queijo coalho', 'Carne de Sol c/ Catupiry e Queijo', 'Frango com Bacon', 'Frango com Catupiry', 'Frango com Calabresa', 'Frango com Queijo', 'Carne com Queijo', 'Carne com Catupiry', 'Carne com Bacon'],
-        instructionText: 'Escolha até 3 sabores:'
-    },
     'cachorrao': {
         titulo: 'Cachorrão',
         opcoes: [], // Sem sub-opções, apenas a principal

@@ -174,39 +174,6 @@
     }
 }
 
-.opcoes-xtudo {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
-    gap: 10px; /* Espaçamento entre os itens */
-    max-height: 150px; /* Altura máxima antes de rolar */
-    overflow-y: auto; /* Adiciona rolagem vertical se o conteúdo exceder a altura */
-    border: 1px solid #ccc; /* Borda para destacar a caixa */
-    padding: 10px; /* Espaçamento interno */
-    border-radius: 8px; /* Cantos arredondados */
-    margin-bottom: 10px; /* Espaçamento abaixo da caixa */
-
-
-    & label {
-        display: flex;
-        align-items: center;
-        width: auto;
-        height: 50px;
-        margin: 5px;
-        font-size: 10px;
-        border: 1px solid black;
-        padding: 2px;
-        border-radius: 5px;
-        gap: 5px; 
-
-
-    }
-}
-
-
-
-
-
-
 .botao {
     display: flex;
     justify-content: center;
