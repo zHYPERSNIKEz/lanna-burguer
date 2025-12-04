@@ -1,0 +1,776 @@
+#container_comida {
+
+    position: relative; /* Adicionado como referência */
+    padding: 10px;
+    box-sizing: border-box;
+    background-image: url(../assents/backgroud_comida.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+
+    /* Camada de Fundo */
+    & .color {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 20%;
+        z-index: 1; /* Fica atrás */
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) 43%, rgba(255, 255, 255, 0) 75%);
+    }
+
+    /* Camadas de Conteúdo */
+    & .title-container,
+    & .card,
+    & .container-menu {
+        position: relative; /* Posicionado em relação ao pai */
+        z-index: 2;         /* Fica na frente */
+    }
+
+    & .title-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        color: var(--font-color);
+
+        & .title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            font-size: 15px;
+
+            & .title-line {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 5px;
+
+                & #verificacao {
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    background-image: url('../assents/icones/verificado.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    vertical-align: middle;
+                    margin-left: 5px;
+                }
+            }
+
+            & h2 {
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+
+        & .subTitle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+
+            & .localizacao {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background-image: url('../assents/icones/pin-localizacao.gif');
+                background-size: contain;
+                background-repeat: no-repeat
+            }
+
+            & h2{
+                font-size: 13px;
+                text-align: center;
+                
+            }
+        }
+    }
+
+    & .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        background-color: var(--bg-cards);
+        width: 350px;
+        height: 50px;
+        padding: 5px;
+        margin: 25px auto; /* Centraliza o card */
+        gap: 10px;
+
+        & img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        & h3 {
+            font-size: 15px;
+        }
+    }
+
+    & .container-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 300px;
+        max-height: auto;
+        background-color: var(--bg-cards);
+        padding: 10px;
+        margin: 0px 10px 0 10px;
+        border-radius: 20px;
+        text-align: center;
+
+        & .title-menu {
+            font-size: 14px;
+            text-align: center;
+            margin: 0px 5px 9px 5px;
+            
+        }
+
+        & .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 9px;
+        }
+
+        & .cards {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            background-color: var(--bg-asents);
+            color: var(--font-color);
+            padding: 7px;
+            border-radius: 20px;
+
+            & h2 {
+                margin-top:8px;
+                font-size: 12px;
+                min-height: 2.4em; /* Garante espaço para 2 linhas */
+            }
+
+            & p {
+                margin: 5px;
+                font-size: 12px;
+            }
+
+            & img {
+                width: 85px;
+                height: 80px;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+            
+        }
+        
+    }
+}
+
+.opcoes-xtudo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 10px; /* Espaçamento entre os itens */
+    max-height: 150px; /* Altura máxima antes de rolar */
+    overflow-y: auto; /* Adiciona rolagem vertical se o conteúdo exceder a altura */
+    border: 1px solid #ccc; /* Borda para destacar a caixa */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 8px; /* Cantos arredondados */
+    margin-bottom: 10px; /* Espaçamento abaixo da caixa */
+
+
+    & label {
+        display: flex;
+        align-items: center;
+        width: auto;
+        height: 50px;
+        margin: 5px;
+        font-size: 10px;
+        border: 1px solid black;
+        padding: 2px;
+        border-radius: 5px;
+        gap: 5px; 
+
+
+    }
+}
+
+
+
+
+#marmita {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    max-height: auto;
+    background-color: var(--bg-cards-marmita);
+    padding: 10px;
+    margin: 10px 10px 0 10px;
+    border-radius: 20px;
+    text-align: center;
+
+    & .title-menu {
+        font-size: 14px;
+        text-align: center;
+        margin: 0px 5px 9px 5px;
+        
+    }
+
+    & .card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 9px;
+    }
+
+    & .cards {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        background-color: var(--bg-asents);
+        color: var(--font-color);
+        padding: 7px;
+        border-radius: 20px;
+
+        & h2 {
+            margin-top:8px;
+            font-size: 12px;
+            min-height: 2.4em; /* Garante espaço para 2 linhas */
+        }
+
+        & p {
+            margin: 5px;
+            font-size: 12px;
+        }
+
+        & img {
+            width: 85px;
+            height: 80px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    }
+}
+
+
+#outros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    max-height: auto;
+    background-color: var(--bg-cards-marmita);
+    padding: 10px;
+    margin: 10px 10px 0 10px;
+    border-radius: 20px;
+    text-align: center;
+
+    & .title-menu {
+        font-size: 14px;
+        text-align: center;
+        margin: 0px 5px 9px 5px;
+        
+    }
+
+    & .card-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    & .cards {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        background-color: var(--bg-asents);
+        color: var(--font-color);
+        padding: 7px;
+        border-radius: 20px;
+
+        & h2 {
+            margin-top:8px;
+            font-size: 12px;
+            min-height: 2.4em; /* Garante espaço para 2 linhas */
+        }
+
+        & p {
+            margin: 5px;
+            font-size: 12px;
+        }
+
+        & img {
+            width: 120px;
+            height: 80px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    }
+}
+
+.opcoes-cuscuz label {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px; /* Add some space between labels */
+    display: flex; /* Ensure flex for alignment */
+    align-items: center; /* Vertically align content */
+    gap: 5px; /* Space between radio button and text */
+}
+
+.adicionais-cuscuz label {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px; /* Add some space between labels */
+    display: flex; /* Ensure flex for alignment */
+    align-items: center; /* Vertically align content */
+    gap: 5px; /* Space between checkbox and text */
+}
+
+.opcoes-adicionais-cuscuz {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Espaçamento entre os checkboxes */
+    margin-top: 5px;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 30px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 25px;
+    background-color: #ffff;
+    text-align: center;
+    cursor: pointer;
+}
+.adiciona{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: fit-content;
+        margin: 5px;
+        height: 10px;
+        padding: 5px;
+        /* border: 2px solid #000000; */
+        color: black;
+        background-color: aliceblue;
+        font-size: 10px;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+}
+
+.comprar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+
+    &  .menos{
+        width: 15px;
+        height: 15px;
+        background-image: url('../assents/icones/menos-circulo.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
+
+    & .soma{
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background-image: url('../assents/icones/adicionar.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+#container_bebida {
+    padding: 10px;
+    background-image: url(../assents/backgroud_bebida.png);
+    background-size: cover;
+    background-position: top center;
+
+    & .container-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 300px;
+        max-height: auto;
+        background-color: var(--bg-card-bebida);
+        padding: 15px;
+        margin: 0px 10px 0 10px;
+        border-radius: 20px;
+        text-align: center;
+
+        & .title-menu {
+            font-size: 15px;
+            text-align: center;
+            margin: 0px 5px 9px 5px;
+            color: var(--font-color);
+        }
+
+        & .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+        }
+
+        & .cards {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            background-color: var(--bg-asents);
+            color: var(--font-color);
+            padding: 7px;
+            margin: auto;
+            border-radius: 20px;
+
+            & h2 {
+                margin: 8px 0 8px 0  ;
+                font-size: 12px;
+            }
+
+            & img {
+                width: 90px;
+                height: 80px;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+            & p {
+                margin: 5px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+#container_delivery{
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    min-height: 200px;
+    background-color: var(--bg-color-delyve);
+    padding: 30px;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+
+    .botao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        max-width: 190px;
+        height: 10px;
+        margin: 8px;
+        padding: 10px;
+        font-size: 13.5px;
+        border-radius: 15px;
+        background-color: #f8b334;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .ifood{
+        background-color: #ff0000;
+    }
+    .ze{
+        background-color: #ffcc00;
+    }
+
+    & .title-menu {
+        color: #ffff;
+        text-align: center;
+        margin: 0px 5px 9px 5px;
+    }
+
+    & .card-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+    }
+
+    & .cards {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            background-color: var(--bg-asents-delive);
+            color: var(--font-color);
+            padding: 7px;
+            margin: 5px;
+            border-radius: 20px;
+
+            & h2 {  
+                margin-top: 8px;
+                font-size: 14px;
+                } 
+
+            & img {
+                width: 85px;
+                height: 80px;
+                border-radius: 20px;
+                object-fit: cover;
+                }       
+        }
+
+}
+
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 30px;
+
+
+    & img{
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border-radius: 50%;
+        padding: 2px;
+        box-sizing: border-box;
+        transition: transform 0.3s ease;
+
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+#container_comida .card-grid .cards:nth-child(6) h2 {
+    font-size: 13px;
+}
+
+.title-small-nowrap {
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+.opcoes-marmita {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+
+.acompanhamentos-marmita,
+.carnes-marmita {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.opcoes-marmita label,
+.acompanhamentos-marmita label,
+.carnes-marmita label {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVIDADE */
+
+@media (min-width: 699px){
+
+    .title-line h1 {
+        font-size: 50px;
+    }
+
+    #verificacao {
+        width: 50px;
+        height: 50px;
+    }
+
+    .title-line h2 {
+        font-size: 30px;
+    }
+
+    .card-grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .adiciona button{
+        font-size: 20px;
+        width: fit-content;
+        height: 25px;
+        padding: 8px;
+        
+    }
+
+    .adiciona button:hover{
+        background-color: rgba(84, 243, 84, 0.466);
+    }
+
+    .card h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+
+    }
+
+    #container_comida .container-menu .cards p {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    #container_comida .card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    #container_comida .container-menu .cards img,
+    #marmita .cards img{
+        width: 220px;
+        height: 120px;
+    }
+    #outros .card-grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #outros .cards img{
+        width: 150px;
+        height: 120px;
+    }
+
+    #container_bebida .container-menu .cards img {
+        width: 180px;
+        height: 130px;
+    }
+
+    #container_delivery .cards img {
+        width: 200px;
+        height: 120px;
+    }
+
+    #container_comida .container-menu,#marmita,#outros,
+    #container_bebida .container-menu,
+    #container_delivery {
+        min-width: 610px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #container_delivery .cards figure a {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Aumenta o card de "Sabor Autêntico" */
+    #container_comida .card {
+        width: 500px; /* Remove a largura fixa do mobile */
+        height: auto; /* Remove a altura fixa do mobile */
+        padding: 3px; /*Aumenta o padding*/
+        gap: 15px;
+    }
+
+    #container_comida .card img {
+        width: 45px;
+        height: 45px;
+    }
+
+    #container_comida .card h3 {
+        font-size: 22px;
+    }
+
+    #container_comida .card-grid .cards:nth-child(6) h2 {
+        font-size: 14px; /* Reset font size for desktop */
+    }
+
+    #container_bebida .container-menu .card-grid {
+        gap: 20px;
+    }
+
+    #container_bebida .cards h2 {
+        font-size: 16px;
+    }
+
+    #container_comida .cards h2 {
+        font-size: 16px !important;
+    }
+
+    #container_bebida .cards h2 {
+        font-size: 16px !important;
+    }
+
+    #container_bebida .cards h2.title-small-nowrap {
+        font-size: 16px !important;
+    }
+
+    .opcoes-xtudo{
+        max-height: 300px;
+    }
+
+    .opcoes-xtudo label {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 18px;
+        width: auto;
+        height: 80px;
+    }
+}
