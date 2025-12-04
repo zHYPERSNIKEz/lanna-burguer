@@ -37,48 +37,6 @@ export const produtos = {
         opcoes: [], // Sem sub-opções, apenas a principal
         instructionText: 'Escolha a quantidade:'
     },
-    'marmita-p': {
-        titulo: 'Marmita P',
-        opcoes: ['Arroz refogado', 'Feijão Mulatinho', 'Baião de feijão verde'],
-        acompanhamentos: ['Macarrão', 'Beterraba ralada', 'Salada Crua', 'Farofa', 'Cuscuz C/Bacon', 'Purê de batata', 'Banana empanada'],
-        carnes: ['Linguiça', 'Porco', 'Frango assado', 'Frango ao molho'],
-        instructionText: 'Escolha as opções para sua marmita:'
-    },
-    'marmita-m': {
-        titulo: 'Marmita M',
-        opcoes: ['Arroz refogado', 'Feijão Mulatinho', 'Baião de feijão verde'],
-        acompanhamentos: ['Macarrão', 'Beterraba ralada', 'Salada Crua', 'Farofa', 'Cuscuz C/Bacon', 'Purê de batata', 'Banana empanada', 'Lasanha de frango', 'Lasanha bolonhesa'],
-        carnes: ['Linguiça', 'Porco', 'Frango assado', 'Frango ao molho'],
-        instructionText: 'Escolha as opções para sua marmita:'
-    },
-    'marmita-g': {
-        titulo: 'Marmita G',
-        opcoes: ['Arroz refogado', 'Feijão Mulatinho', 'Baião de feijão verde'],
-        acompanhamentos: ['Macarrão', 'Beterraba ralada', 'Salada Crua', 'Farofa', 'Cuscuz C/Bacon', 'Purê de batata', 'Banana empanada', 'Lasanha de frango', 'Lasanha bolonhesa'],
-        carnes: ['Linguiça', 'Porco', 'Frango assado', 'Frango ao molho'],
-        instructionText: 'Escolha as opções para sua marmita:'
-    },
-    'cuscuz-pote':{
-        titulo: 'cuscuz no pote',
-        opcoes: ['Carne moída ao molho', 'Linguiça Suína', 'Linguiça Calabresa', 'Frango Desfiado', 'Quijo e Vinagrete'],
-        instructionText: 'Escolha os sabores e quantidades:'
-    },
-    'cuscuz-recheado':{
-        titulo: 'Cuscuz Recheado',
-        opcoes: ['Frango', 'Carne Moída', 'Calabresa', 'Salsicha', 'Salada'],
-        adicionais: ['Carne de Sol', 'Bacon'],
-        instructionText: 'Escolha 1 sabor:'
-    },
-    'sopa-frango': {
-        titulo: 'Sopa de Frango',
-        opcoes: [],
-        instructionText: 'Escolha a quantidade:'
-    },
-    'mungunza': {
-        titulo: 'Mungunzá',
-        opcoes: [],
-        instructionText: 'Escolha a quantidade:'
-    },
     'refri-2l': {
         titulo: 'Refrigerante 2L',
         opcoes: ['Coca-Cola', 'Cajuina','Guaraná Antarctica', 'Fanta Laranja', 'Fanta Uva'],

@@ -205,145 +205,7 @@
 
 
 
-#marmita {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-width: 300px;
-    max-height: auto;
-    background-color: var(--bg-cards-marmita);
-    padding: 10px;
-    margin: 10px 10px 0 10px;
-    border-radius: 20px;
-    text-align: center;
 
-    & .title-menu {
-        font-size: 14px;
-        text-align: center;
-        margin: 0px 5px 9px 5px;
-        
-    }
-
-    & .card-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 9px;
-    }
-
-    & .cards {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-        align-items: center;
-        background-color: var(--bg-asents);
-        color: var(--font-color);
-        padding: 7px;
-        border-radius: 20px;
-
-        & h2 {
-            margin-top:8px;
-            font-size: 12px;
-            min-height: 2.4em; /* Garante espaço para 2 linhas */
-        }
-
-        & p {
-            margin: 5px;
-            font-size: 12px;
-        }
-
-        & img {
-            width: 85px;
-            height: 80px;
-            border-radius: 10px;
-            object-fit: cover;
-        }
-    }
-}
-
-
-#outros {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-width: 300px;
-    max-height: auto;
-    background-color: var(--bg-cards-marmita);
-    padding: 10px;
-    margin: 10px 10px 0 10px;
-    border-radius: 20px;
-    text-align: center;
-
-    & .title-menu {
-        font-size: 14px;
-        text-align: center;
-        margin: 0px 5px 9px 5px;
-        
-    }
-
-    & .card-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 18px;
-    }
-
-    & .cards {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-        align-items: center;
-        background-color: var(--bg-asents);
-        color: var(--font-color);
-        padding: 7px;
-        border-radius: 20px;
-
-        & h2 {
-            margin-top:8px;
-            font-size: 12px;
-            min-height: 2.4em; /* Garante espaço para 2 linhas */
-        }
-
-        & p {
-            margin: 5px;
-            font-size: 12px;
-        }
-
-        & img {
-            width: 120px;
-            height: 80px;
-            border-radius: 10px;
-            object-fit: cover;
-        }
-    }
-}
-
-.opcoes-cuscuz label {
-    border: 1px solid black;
-    padding: 5px;
-    border-radius: 5px;
-    margin-bottom: 5px; /* Add some space between labels */
-    display: flex; /* Ensure flex for alignment */
-    align-items: center; /* Vertically align content */
-    gap: 5px; /* Space between radio button and text */
-}
-
-.adicionais-cuscuz label {
-    border: 1px solid black;
-    padding: 5px;
-    border-radius: 5px;
-    margin-bottom: 5px; /* Add some space between labels */
-    display: flex; /* Ensure flex for alignment */
-    align-items: center; /* Vertically align content */
-    gap: 5px; /* Space between checkbox and text */
-}
-
-.opcoes-adicionais-cuscuz {
-    display: flex;
-    flex-direction: column;
-    gap: 5px; /* Espaçamento entre os checkboxes */
-    margin-top: 5px;
-}
 
 .botao {
     display: flex;
@@ -681,8 +543,7 @@
         gap: 15px;
     }
 
-    #container_comida .container-menu .cards img,
-    #marmita .cards img{
+    #container_comida .container-menu .cards img{
         width: 220px;
         height: 120px;
     }
@@ -706,7 +567,7 @@
         height: 120px;
     }
 
-    #container_comida .container-menu,#marmita,#outros,
+    #container_comida .container-menu,
     #container_bebida .container-menu,
     #container_delivery {
         min-width: 610px;

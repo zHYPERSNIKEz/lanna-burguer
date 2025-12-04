@@ -39,30 +39,4 @@ opcoesContainer.addEventListener('click', (event) => {
     }
 });
 
-opcoesContainer.addEventListener('change', (event) => {
-    if (event.target.name === 'sabor-cuscuz') {
-        document.querySelector('.adicionais-cuscuz').style.display = 'block';
-    }
-});
 
-modalContainer.addEventListener('click', (event) => {
-    if (event.target === modalContainer) {
-        gerenciarFecharModal(modalContainer); // Usa a função importada
-    }
-});
-
-opcoesContainer.addEventListener('click', (event) => {
-    if (event.target.name === 'acompanhamento-marmita') {
-        const checkboxes = document.querySelectorAll('[name="acompanhamento-marmita"]:checked');
-        if (checkboxes.length > 3) {
-            alert('Você pode escolher no máximo 3 acompanhamentos.');
-            event.target.checked = false;
-        }
-    } else if (event.target.name === 'carne-marmita') {
-        const checkboxes = document.querySelectorAll('[name="carne-marmita"]:checked');
-        if (checkboxes.length > 2) {
-            alert('Você pode escolher no máximo 2 tipos de carne.');
-            event.target.checked = false;
-        }
-    }
-});
