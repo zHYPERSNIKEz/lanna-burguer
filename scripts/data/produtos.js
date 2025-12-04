@@ -1,40 +1,39 @@
 // scripts/data/produtos.js
 
 export const produtos = {
-    'pastel-simples': {
-        titulo: 'Pastel Simples',
-        opcoes: ['Carne', 'Queijo', 'Frango'],
-        instructionText: 'Escolha os sabores e quantidades:'
+    'x-burger': {
+        titulo: 'X-BURGER',
+        descricao: 'Pão Brioche, Carne Artesanal, Mussarela, Maionese da Casa, Batata Palha, Cheddar ou Catupiry, Tomate e Alface.',
+        instructionText: 'Escolha a quantidade:'
     },
-    'pastel-especial-9': {
-        titulo: 'Pastel Especial',
-        opcoes: ['Queijo e Bacon', 'Calabresa e Queijo',
-            'Pizza', 'Frango com Cheddar e azeitona',
-            'Frango com Queijo e azeitona'],
-        instructionText: 'Escolha os sabores e quantidades:'
+    'x-bacon': {
+        titulo: 'X-BACON',
+        descricao: 'Pão Brioche, Carne Artesanal, Bacon, Mussarela, Maionese da Casa, Batata Palha, Cheddar ou Catupiry, Tomate e Alface.',
+        instructionText: 'Escolha a quantidade:'
     },
-    'pastel-especial-12': {
-        titulo: 'Pastel Especial',
-        opcoes: ['Carne de Sol c/ Queijo coalho', 'Carne de Sol c/ Catupiry e Queijo'],
-        instructionText: 'Escolha os sabores e quantidades:'
+    'x-calabresa': {
+        titulo: 'X-CALABRESA',
+        descricao: 'Pão Brioche, Carne Artesanal, Calabresa Moída, Mussarela, Maionese da Casa, Batata Palha, Cheddar ou Catupiry.',
+        instructionText: 'Escolha a quantidade:'
     },
-    'pastel-2-sabores': {
-        titulo: 'Pastel 2 Sabores',
-        opcoes: ['Frango com Bacon','Frango com Catupiry',
-                'Frango com Calabresa','Frango com Queijo',
-                'Carne com Queijo',
-                'Carne com Catupiry',
-                'Carne com Bacon'],
-        instructionText: 'Escolha os sabores e quantidades:'
+    'x-egg': {
+        titulo: 'X-EGG',
+        descricao: 'Pão Brioche, Carne Artesanal, Mussarela, Ovo, Maionese da Casa, Batata Palha, Cheddar ou Catupiry, Tomate e Alface.',
+        instructionText: 'Escolha a quantidade:'
     },
-    'pastel-x-tudo': {
-        titulo: 'Pastel X-Tudo',
-        opcoes: ['Carne', 'Queijo', 'Frango', 'Queijo e Bacon', 'Calabresa e Queijo', 'Pizza', 'Frango com Cheddar e azeitona', 'Frango com Queijo e azeitona', 'Carne de Sol c/ Queijo coalho', 'Carne de Sol c/ Catupiry e Queijo', 'Frango com Bacon', 'Frango com Catupiry', 'Frango com Calabresa', 'Frango com Queijo', 'Carne com Queijo', 'Carne com Catupiry', 'Carne com Bacon'],
-        instructionText: 'Escolha até 3 sabores:'
+    'x-tudo': {
+        titulo: 'X-TUDO',
+        descricao: 'Pão Brioche, Carne Artesanal, Mussarela, Bacon, Calabresa Moída, Maionese da Casa, Ovo, Cheddar ou Catupiry, Tomate e Alface.',
+        instructionText: 'Escolha a quantidade:'
     },
-    'cachorrao': {
-        titulo: 'Cachorrão',
-        opcoes: [], // Sem sub-opções, apenas a principal
+    'duplo-bacon': {
+        titulo: 'DUPLO BACON',
+        descricao: 'Pão Brioche, Duas Carnes Artesanais, Bacon, Mussarela, Maionese da Casa, Batata Palha, Cheddar ou Catupiry, Tomate e Alface.',
+        instructionText: 'Escolha a quantidade:'
+    },
+    'duplo-calabresa': {
+        titulo: 'DUPLO CALABRESA',
+        descricao: 'Pão Brioche, Duas Carnes Artesanais, Calabresa Moída, Mussarela, Maionese da Casa, Batata Palha, Cheddar ou Catupiry, Tomate e Alface.',
         instructionText: 'Escolha a quantidade:'
     },
     'refri-2l': {

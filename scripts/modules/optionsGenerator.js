@@ -6,12 +6,13 @@ export function gerarOpcoesHTML(produtoId) {
     const produto = produtos[produtoId];
     let htmlOpcoes = '';
 
-    if (produtoId === 'pastel-x-tudo') {
+    if (produto.descricao) {
         htmlOpcoes += `
-                    <div class="opcoes-xtudo opcoes-group">
-                        ${produto.opcoes.map(sabor => `<label><input type="checkbox" name="sabor-xtudo" value="${sabor}"> ${sabor}</label>`).join('')}
-                    </div>            <div class="sabor-item" data-sabor="${produto.titulo}">
-                <span>${produto.titulo}</span>
+            <div class="descricao">
+                <p>${produto.descricao}</p>
+            </div>
+            <h4>${produto.instructionText}</h4>
+            <div class="sabor-item" data-sabor="${produto.titulo}">
                 <div class="quantidade">
                     <button class="menos disabled">-</button>
                     <span class="qtd">0</span>

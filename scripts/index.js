@@ -1,12 +1,3 @@
-function adjustPasteis2saboresTitle() {
-    const title = document.getElementById('pasteis-sabores-title');
-    if (window.innerWidth > 700) {
-        title.innerHTML = 'Pastéis 2 sabores';
-    } else {
-        title.innerHTML = 'Pastéis<br>2 sabores';
-    }
-}
-
 function adjustRefri1LitroTitle() {
     const title2 = document.getElementById('Refri1Litro');
     if (window.innerWidth > 700){
@@ -17,24 +8,22 @@ function adjustRefri1LitroTitle() {
     }
 }
 
-function adjPastelXtudoTitle() {
-    const title3 = document.getElementById('pasteis-xtudo');
+function adjustDuploCalabresaTitle() {
+    const title = document.getElementById('duplo-calabresa-title');
+    if (title) { // Check if the element exists
         if (window.innerWidth > 700) {
-            title3.innerHTML = 'Pastel X-tudo'; 
-        }  
-        else {
-            title3.innerHTML = 'Pastel <br> X-tudo'
+            title.innerHTML = 'DUPLO CALABRESA';
+        } else {
+            title.innerHTML = 'DUPLO <br>CALABRESA';
         }
-} 
+    }
+}
 
-window.addEventListener('resize', 
-adjustPasteis2saboresTitle);
-adjustPasteis2saboresTitle();// Run on page load
-
-window.addEventListener('resize', 
+window.addEventListener('resize',
 adjustRefri1LitroTitle);
 adjustRefri1LitroTitle();
 
 window.addEventListener('resize',
-adjPastelXtudoTitle);
-adjPastelXtudoTitle();
+adjustDuploCalabresaTitle);
+adjustDuploCalabresaTitle();
+
