@@ -26,6 +26,16 @@ export const produtos = {
         descricao: 'Pão Brioche, Carne Artesanal, Mussarela, Bacon, Calabresa Moída, Maionese da Casa, Ovo, Cheddar ou Catupiry, Tomate e Alface.',
         instructionText: 'Escolha a quantidade:'
     },
+    'duplo-bacon': {
+        titulo: 'DUPLO BACON',
+        descricao: 'Pão Brioche, Duas Carnes Artesanais, Bacon, Mussarela, Maionese da Casa, Batata Palha, Cheddar ou Catupiry, Tomate e Alface.',
+        instructionText: 'Escolha a quantidade:'
+    },
+    'duplo-calabresa': {
+        titulo: 'DUPLO CALABRESA',
+        descricao: 'Pão Brioche, Duas Carnes Artesanais, Calabresa Moída, Mussarela, Maionese da Casa, Batata Palha, Cheddar ou Catupiry, Tomate e Alface.',
+        instructionText: 'Escolha a quantidade:'
+    },
     'refri-2l': {
         titulo: 'Refrigerante 2L',
         opcoes: ['Coca-Cola', 'Cajuina','Guaraná Antarctica', 'Fanta Laranja', 'Fanta Uva'],
