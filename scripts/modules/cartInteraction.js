@@ -1,5 +1,7 @@
 // scripts/modules/cartInteraction.js
 
+import { produtos } from '../data/produtos.js';
+
 let quantidadesSabores = {};
 
 export function resetarQuantidades() {
@@ -50,7 +52,22 @@ export function coletarItensDoModal(modal, modalContainer, adicionarAoCarrinho, 
     const nomeBase = modal.querySelector('.item-info h3').innerText;
     const produtoId = modalContainer.dataset.produtoId;
 
-    } else {
+    // Verifica se o produto tem descrição (hambúrgueres)
+    if (produtos[produtoId].descricao) {
+        const card = document.querySelector(`[data-produto="${produtoId}"]`);
+        const precoText = card.querySelector('p').innerText;
+        const preco = parseFloat(precoText.replace('R$', '').replace(',', '.'));
+        const quantidade = parseInt(modal.querySelector('.qtd').innerText, 10);
+
+        if (quantidade > 0) {
+            itensParaAdicionar.push({
+                nome: nomeBase,
+                sabor: null, // Sem sabor específico
+                quantidade: quantidade,
+                preco: preco
+            });
+        }
+    } else { // Para produtos com opções (bebidas)
         for (const sabor in quantidadesSabores) {
             const quantidade = quantidadesSabores[sabor];
             if (quantidade > 0) {

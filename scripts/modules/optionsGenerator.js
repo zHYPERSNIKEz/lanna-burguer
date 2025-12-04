@@ -6,7 +6,21 @@ export function gerarOpcoesHTML(produtoId) {
     const produto = produtos[produtoId];
     let htmlOpcoes = '';
 
-    if (produtoId === 'cuscuz-recheado') {
+    if (produto.descricao) {
+        htmlOpcoes += `
+            <div class="descricao">
+                <p>${produto.descricao}</p>
+            </div>
+            <h4>${produto.instructionText}</h4>
+            <div class="sabor-item" data-sabor="${produto.titulo}">
+                <div class="quantidade">
+                    <button class="menos disabled">-</button>
+                    <span class="qtd">0</span>
+                    <button class="mais">+</button>
+                </div>
+            </div>
+        `;
+    } else if (produtoId === 'cuscuz-recheado') {
         htmlOpcoes += `
                     <div class="opcoes-cuscuz opcoes-group">
                         ${produto.opcoes.map(sabor => `<label><input type="radio" name="sabor-cuscuz" value="${sabor}"> ${sabor}</label>`).join('')}

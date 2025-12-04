@@ -1,26 +1,29 @@
 // scripts/data/produtos.js
 
 export const produtos = {
-    'pastel-simples': {
-        titulo: 'Pastel Simples',
-        opcoes: ['Carne', 'Queijo', 'Frango'],
-        instructionText: 'Escolha os sabores e quantidades:'
+    'x-burger': {
+        titulo: 'X-BURGER',
+        descricao: 'Pão Brioche, Carne Artesanal, Mussarela, Maionese da Casa, Batata Palha, Cheddar ou Catupiry, Tomate e Alface.',
+        instructionText: 'Escolha a quantidade:'
     },
-    'pastel-especial-9': {
-        titulo: 'Pastel Especial',
-        opcoes: ['Queijo e Bacon', 'Calabresa e Queijo',
-            'Pizza', 'Frango com Cheddar e azeitona',
-            'Frango com Queijo e azeitona'],
-        instructionText: 'Escolha os sabores e quantidades:'
+    'x-bacon': {
+        titulo: 'X-BACON',
+        descricao: 'Pão Brioche, Carne Artesanal, Bacon, Mussarela, Maionese da Casa, Batata Palha, Cheddar ou Catupiry, Tomate e Alface.',
+        instructionText: 'Escolha a quantidade:'
     },
-    'pastel-especial-12': {
-        titulo: 'Pastel Especial',
-        opcoes: ['Carne de Sol c/ Queijo coalho', 'Carne de Sol c/ Catupiry e Queijo'],
-        instructionText: 'Escolha os sabores e quantidades:'
+    'x-calabresa': {
+        titulo: 'X-CALABRESA',
+        descricao: 'Pão Brioche, Carne Artesanal, Calabresa Moída, Mussarela, Maionese da Casa, Batata Palha, Cheddar ou Catupiry.',
+        instructionText: 'Escolha a quantidade:'
     },
-    'cachorrao': {
-        titulo: 'Cachorrão',
-        opcoes: [], // Sem sub-opções, apenas a principal
+    'x-egg': {
+        titulo: 'X-EGG',
+        descricao: 'Pão Brioche, Carne Artesanal, Mussarela, Ovo, Maionese da Casa, Batata Palha, Cheddar ou Catupiry, Tomate e Alface.',
+        instructionText: 'Escolha a quantidade:'
+    },
+    'x-tudo': {
+        titulo: 'X-TUDO',
+        descricao: 'Pão Brioche, Carne Artesanal, Mussarela, Bacon, Calabresa Moída, Maionese da Casa, Ovo, Cheddar ou Catupiry, Tomate e Alface.',
         instructionText: 'Escolha a quantidade:'
     },
     'refri-2l': {

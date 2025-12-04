@@ -29,19 +29,6 @@ export function abrirModal(event, modalContainer, modal, opcoesContainer, produt
         modalNome.innerText = produtoInfo.titulo;
     }
 
-    // Adiciona e define o texto de instrução dinamicamente
-    const modalHeader = modal.querySelector('.modal-header');
-    let instructionH4 = modalHeader.querySelector('.instruction-text');
-    if (instructionH4) {
-        instructionH4.remove();
-    }
-
-    instructionH4 = document.createElement('h4');
-    instructionH4.classList.add('instruction-text');
-    modalHeader.appendChild(instructionH4);
-    instructionH4.innerText = produtoInfo.instructionText || 'Escolha os sabores e quantidades:';
-
-
     // Gera e insere as opções dinamicamente
     opcoesContainer.innerHTML = gerarOpcoesHTML(produtoId);
 
